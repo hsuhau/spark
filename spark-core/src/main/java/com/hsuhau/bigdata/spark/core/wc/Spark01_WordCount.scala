@@ -9,6 +9,7 @@ object Spark01_WordCount {
     //    Spark框架
 
     // TODO 建立和Spark框架的连接
+//    val sparkConf = new SparkConf().setMaster("spark://fa958038cc24:7077").setAppName("WordCount").setIfMissing("spark.driver.host", "10.181.12.235")
     val sparkConf = new SparkConf().setMaster("local").setAppName("WordCount")
     val sparkContext = new SparkContext(sparkConf);
 
